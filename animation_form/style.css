@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(255, 250, 244);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgb(23, 75, 121);
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    position: relative;
+    top: -10px;
+}
+
+input {
+    width: 100%;
+    position: relative;
+    top: -23px;
+    background-color: transparent;
+    border: none;
+    border-bottom: white solid 3px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    color: white;
+}
+
+button {
+    width: 80%;
+    height: 40px;
+    position: relative;
+    top: -10px;
+    background-color: rgb(164, 213, 255);
+    border: none;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h4 {
+    position: relative;
+    color: white;
+    font-size: 12px;
+}
+
+.register {
+    color: rgb(194, 226, 255);
+    cursor: pointer;
+}
+
+.box {
+    position: relative;
+    top: 20px;
+    padding-top: 10px;
+}
+
+.box label {
+    position: relative;
+    top: -50px;
+    color: white;
+    font-size: 14px;
+    pointer-events: none;
+}
+
+.box label span {
+    display: inline-block;
+    font-size: 15px;
+    min-width: 3px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.box {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    margin: 10px 0 20px;
+}
+
+.box input:focus ~ label span,
+.box input:valid ~ label span {
+    color: white;
+    transform: translateY(-30px);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
